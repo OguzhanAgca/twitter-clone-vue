@@ -1,5 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-	<div class="text-green-700">App Vue</div>
+	<RouterView v-slot="{ Component, route }">
+		<Transition name="slide">
+			<component :is="Component" :key="route" />
+		</Transition>
+	</RouterView>
 </template>

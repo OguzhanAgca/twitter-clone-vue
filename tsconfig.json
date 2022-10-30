@@ -11,8 +11,9 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "types": ["vite-plugin-vue-layouts/client", "vite-plugin-pages/client"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.vue", "types/**/*.d.ts", "components.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

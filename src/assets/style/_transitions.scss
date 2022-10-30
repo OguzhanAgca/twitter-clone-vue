@@ -1,11 +1,11 @@
 /* 1- slide-x */
 .slide-x-enter-from,
-.slide-x-leave-to{
+.slide-x-leave-to {
   transform: translateX(0);
 }
 
 .slide-x-enter-to,
-.slide-x-leave-from{
+.slide-x-leave-from {
   transform: translateX(100%);
 }
 

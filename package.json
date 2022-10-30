@@ -6,17 +6,26 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "lint": "pnpm run lint:eslint:fix & pnpm run lint:prettier:fix",
+    "lint:prettier": "prettier --check \"./src/**/*.(ts|vue|css|scss)\"",
+    "lint:prettier:fix": "prettier --write \"./src/**/*.(ts|vue|css|scss)\"",
+    "lint:eslint": "eslint --ext .ts,.vue ./src",
+    "lint:eslint:fix": "eslint --fix --ext .ts,.vue ./src"
   },
   "dependencies": {
     "vue": "^3.2.41"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "eslint": "^8.26.0",
     "eslint-plugin-vue": "^9.6.0",
+    "husky": "^8.0.0",
     "prettier": "2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.2.0",

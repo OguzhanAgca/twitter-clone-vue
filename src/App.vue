@@ -2,7 +2,7 @@
 
 <template>
 	<RouterView v-slot="{ Component, route }">
-		<Transition name="slide">
+		<Transition name="slide-x">
 			<component :is="Component" :key="route" />
 		</Transition>
 	</RouterView>

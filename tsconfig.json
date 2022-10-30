@@ -12,6 +12,10 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "noEmit": true,
+    "paths": {
+      "/@/*": ["./src/*", "./dist/*"],
+      "/#/": ["./types/*"]
+    },
     "types": ["vite-plugin-vue-layouts/client", "vite-plugin-pages/client"]
   },
   "include": ["src/**/*.vue", "types/**/*.d.ts", "components.d.ts"],

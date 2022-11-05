@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
+  '@iconify/iconify': ^3.0.0
   '@typescript-eslint/eslint-plugin': ^5.41.0
   '@typescript-eslint/parser': ^5.41.0
   '@vitejs/plugin-vue': ^3.2.0
@@ -14,6 +15,7 @@ specifiers:
   husky: ^8.0.0
   postcss: ^8.4.18
   prettier: 2.7.1
+  prettier-plugin-tailwindcss: ^0.1.13
   sass: ^1.55.0
   stylelint: ^14.14.0
   stylelint-config-standard: ^29.0.0
@@ -34,6 +36,7 @@ specifiers:
   zod: ^3.19.1
 
 dependencies:
+  '@iconify/iconify': 3.0.0
   '@vueuse/core': 9.4.0_vue@3.2.41
   '@vueuse/head': 0.9.8_vue@3.2.41
   unplugin-auto-import: 0.11.4_@vueuse+core@9.4.0
@@ -54,6 +57,7 @@ devDependencies:
   husky: 8.0.1
   postcss: 8.4.18
   prettier: 2.7.1
+  prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
   sass: 1.55.0
   stylelint: 14.14.0
   stylelint-config-standard: 29.0.0_stylelint@14.14.0
@@ -359,11 +363,9 @@ packages:
     resolution: {integrity: sha512-wgCSv4GwVLzwGqfUkYEDT9XOfetGZV67D5CmMYp74IdaPMnyOWb/3XxUPvGmuTt8Yw9xekMqzvdQp/p+a/abNw==}
     dependencies:
       '@iconify/types': 2.0.0
-    dev: true
 
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
 
   /@jridgewell/resolve-uri/3.1.0:
     resolution: {integrity: sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==}
@@ -2920,6 +2922,15 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
+    resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
+    engines: {node: '>=12.17.0'}
+    peerDependencies:
+      prettier: '>=2.2.0'
+    dependencies:
+      prettier: 2.7.1
     dev: true
 
   /prettier/2.7.1:

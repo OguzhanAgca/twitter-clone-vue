@@ -7,8 +7,12 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    CreateTweetLink: typeof import('./src/components/base/partial/CreateTweetLink.vue')['default']
+    DesktopSidebar: typeof import('./src/components/layouts/DesktopSidebar.vue')['default']
     Example: typeof import('./src/components/Example.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SidebarLink: typeof import('./src/components/SidebarLink.vue')['default']
+    SidebarLinks: typeof import('./src/components/base/sidebar/SidebarLinks.vue')['default']
   }
 }

@@ -3,5 +3,7 @@
   "singleQuote": true,
   "tabWidth": 2,
   "bracketSpacing": true,
-  "useTabs": true
+  "useTabs": true,
+  "printWidth": 80,
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

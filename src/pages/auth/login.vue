@@ -43,7 +43,6 @@ useHead({
 				<div class="relative w-full">
 					<div
 						class="flex w-full items-center justify-center gap-1 rounded-full border border-gray-300 py-2 text-sm hover:cursor-pointer hover:bg-slate-200"
-						@click=""
 					>
 						<GoogleLogo />
 						<div>Sign up with Google</div>

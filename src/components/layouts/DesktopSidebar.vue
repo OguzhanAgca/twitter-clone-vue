@@ -7,15 +7,16 @@
 		<div class="pl-6 pr-4 md:pr-10">
 			<div class="flex flex-col items-end gap-1 md:items-start">
 				<!-- Twitter Logo -->
-				<div
+				<RouterLink
 					class="flex w-fit items-center rounded-full p-2.5 hover:cursor-pointer hover:bg-blue-100"
+					:to="{ name: 'index-home' }"
 				>
 					<i
 						class="iconify text-2xl text-blue-500 md:text-3xl"
 						data-icon="akar-icons:twitter-fill"
 						aria-hidden="true"
 					></i>
-				</div>
+				</RouterLink>
 
 				<SidebarLinks />
 

@@ -1,26 +1,26 @@
 /* 1- slide-x */
 .slide-x-enter-from,
 .slide-x-leave-to {
-  transform: translateX(-100%);
+	transform: translateX(-100%);
 }
 
 .slide-x-enter-to,
 .slide-x-leave-from {
-  transform: translateX(0);
+	transform: translateX(0);
 }
 
 .slide-x-enter-active,
 .slide-x-leave-active {
-  transition: 0.5s all ease;
+	transition: 0.5s all ease;
 }
 
 /* 2- Fade */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
-  opacity: 0;
+	opacity: 0;
 }

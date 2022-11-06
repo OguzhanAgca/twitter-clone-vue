@@ -4,9 +4,12 @@ import {
 	useBreakpoints,
 	breakpointsTailwind,
 } from '@vueuse/core'
+import { useRoute } from 'vue-router'
 
 const isOpenSidebar = ref(false)
 const sideBarRef = ref(null)
+
+const route = useRoute()
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const largerThanSm = breakpoints.greater('sm')
@@ -82,28 +85,30 @@ onMounted(() => {
 			class="w-full bg-slate-50 transition-colors sm:w-3/4"
 			:class="[isOpenSidebar && 'bg-black/50']"
 		>
-			<div class="flex w-full items-center justify-between px-4 py-2">
-				<div class="flex items-center gap-x-3">
-					<div
-						class="block w-fit rounded-full bg-blue-400 p-2 text-sm text-white sm:hidden"
-						@click="isOpenSidebar = !isOpenSidebar"
-					>
-						OA
+			<div v-if="route.fullPath === '/home'">
+				<div class="flex w-full items-center justify-between px-4 py-2">
+					<div class="flex items-center gap-x-3">
+						<div
+							class="block w-fit rounded-full bg-blue-400 p-2 text-sm text-white sm:hidden"
+							@click="isOpenSidebar = !isOpenSidebar"
+						>
+							OA
+						</div>
+
+						<div class="font-medium">Home</div>
 					</div>
 
-					<div class="font-medium">Home</div>
+					<div>
+						<i
+							class="iconify"
+							data-icon="clarity:star-line"
+							aria-hidden="true"
+						></i>
+					</div>
 				</div>
 
-				<div>
-					<i
-						class="iconify"
-						data-icon="clarity:star-line"
-						aria-hidden="true"
-					></i>
-				</div>
+				<hr class="border-black/10" />
 			</div>
-
-			<hr class="border-black/10" />
 
 			<RouterView />
 		</div>

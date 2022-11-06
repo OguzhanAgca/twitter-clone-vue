@@ -1,5 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+
+useHead({
+	title: 'Home / Twitter',
+})
+</script>
 
 <template>
-	<div>Home</div>
+	<div>
+		<div>Home</div>
+	</div>
 </template>

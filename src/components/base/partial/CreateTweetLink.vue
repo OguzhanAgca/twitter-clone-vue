@@ -10,6 +10,6 @@
 			aria-hidden="true"
 		></i>
 
-		<span class="hidden md:block">Tweet</span>
+		<span class="hidden font-bold md:block">Tweet</span>
 	</div>
 </template>

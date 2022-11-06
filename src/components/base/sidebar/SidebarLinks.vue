@@ -7,11 +7,7 @@
 		exact-active-class="link-active"
 		:to="{ name: 'index-home' }"
 	>
-		<i
-			class="iconify text-2xl md:text-3xl"
-			data-icon="ic:round-home"
-			aria-hidden="true"
-		></i>
+		<HomeLogo class="w-7" color="#000" />
 
 		<span class="block text-xl sm:hidden md:block">Home</span>
 	</RouterLink>
@@ -22,11 +18,7 @@
 		exact-active-class="link-active"
 		:to="{ name: 'index-explore' }"
 	>
-		<i
-			class="iconify text-2xl md:text-3xl"
-			data-icon="akar-icons:hashtag"
-			aria-hidden="true"
-		></i>
+		<ExploreLogo class="w-7" color="#000" />
 
 		<span class="block text-xl sm:hidden md:block">Explore</span>
 	</RouterLink>
@@ -37,11 +29,7 @@
 		exact-active-class="link-active"
 		:to="{ name: 'index-notifications' }"
 	>
-		<i
-			class="iconify text-2xl md:text-3xl"
-			data-icon="codicon:bell"
-			aria-hidden="true"
-		></i>
+		<NotificationsLogo class="w-7" color="#000" />
 
 		<span class="block text-xl sm:hidden md:block">Notifications</span>
 	</RouterLink>
@@ -52,11 +40,7 @@
 		exact-active-class="link-active"
 		:to="{ name: 'index-messages' }"
 	>
-		<i
-			class="iconify text-2xl md:text-3xl"
-			data-icon="akar-icons:envelope"
-			aria-hidden="true"
-		></i>
+		<MessagesLogo class="w-7" color="#000" />
 
 		<span class="block text-xl sm:hidden md:block">Messages</span>
 	</RouterLink>
@@ -82,11 +66,7 @@
 		exact-active-class="link-active"
 		:to="{ name: 'index-profile' }"
 	>
-		<i
-			class="iconify text-2xl md:text-3xl"
-			data-icon="ant-design:user-outlined"
-			aria-hidden="true"
-		></i>
+		<ProfileLogo class="w-7" color="#000" />
 
 		<span class="block text-xl sm:hidden md:block">Profile</span>
 	</RouterLink>

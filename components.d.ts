@@ -7,12 +7,22 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BookmarksLogo: typeof import('./src/components/svg/BookmarksLogo.vue')['default']
     CreateTweetLink: typeof import('./src/components/base/partial/CreateTweetLink.vue')['default']
     DesktopSidebar: typeof import('./src/components/layouts/DesktopSidebar.vue')['default']
     Example: typeof import('./src/components/Example.vue')['default']
+    ExploreLogo: typeof import('./src/components/svg/ExploreLogo.vue')['default']
+    GoogleLogo: typeof import('./src/components/svg/GoogleLogo.vue')['default']
+    HomeLogo: typeof import('./src/components/svg/HomeLogo.vue')['default']
+    MessagesLogo: typeof import('./src/components/svg/MessagesLogo.vue')['default']
+    NotificationsLogo: typeof import('./src/components/svg/NotificationsLogo.vue')['default']
+    ProfileLogo: typeof import('./src/components/svg/ProfileLogo.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SidebarLink: typeof import('./src/components/SidebarLink.vue')['default']
     SidebarLinks: typeof import('./src/components/base/sidebar/SidebarLinks.vue')['default']
+    TwitterBird: typeof import('./src/components/svg/TwitterBird.vue')['default']
+    TwitterLogo: typeof import('./src/components/svg/TwitterLogo.vue')['default']
+    TwttierBird: typeof import('./src/components/svg/TwttierBird.vue')['default']
   }
 }
